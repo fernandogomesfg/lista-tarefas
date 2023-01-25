@@ -56,6 +56,9 @@ function marcarTarefa(id) {
         var icone =  document.getElementById(`icone_`+id);
         icone.classList.remove("iconoir-circle");
         icone.classList.add("iconoir-check-circle");
+
+        // fazer com que a tarefa seja colocada por ultimo da lista
+        item.parentNode.appendChild(item);
     }else{
         item.classList.remove('clicado');
 
